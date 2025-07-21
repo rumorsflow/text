@@ -326,6 +326,10 @@ func String(name string) Message {
 	return catmsg.String(name)
 }
 
+func FirstOf(messages ...Message) Message {
+	return catmsg.FirstOf(messages...)
+}
+
 // Var sets a variable that may be substituted in formatting patterns using
 // named substitution of the form "${name}". The name argument is used as a
 // fallback if the statements do not produce a match. The statement sequence may
