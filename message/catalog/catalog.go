@@ -327,7 +327,7 @@ func String(name string) Message {
 }
 
 func FirstOf(messages ...Message) Message {
-	return catmsg.FirstOf(messages...)
+	return catmsg.FirstOf(messages)
 }
 
 // Var sets a variable that may be substituted in formatting patterns using
